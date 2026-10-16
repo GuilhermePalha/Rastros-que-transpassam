@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rastros que transpassam</title>
+  <link rel="icon" type="image/png" href="sankofa2.png"><!--Tag para adicionar ícone na Aba-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,700;1,400&family=Gloock&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="sankofa" viewBox="0 0 200 200">
+    <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M40 140 C38 102 88 86 130 100 C162 111 172 138 160 162 L150 176 L136 160 C110 172 70 172 40 140 Z"/>
+      <path d="M150 106 C178 70 152 32 106 38 C80 42 68 54 72 68"/>
+      <circle cx="72" cy="72" r="9"/>
+      <path d="M64 79 L54 90"/>
+      <ellipse cx="50" cy="104" rx="8" ry="10"/>
+      <path d="M96 164 L96 188 M92 188 L106 188 M118 163 L118 188 M114 188 L128 188"/>
+      <path d="M42 132 C26 138 14 150 8 166 M46 144 C32 152 24 164 22 178"/>
+    </g>
+  </symbol>
+</svg>
+
+<main id="app">
+
+  <!-- ===== CENA 1: ABERTURA ===== -->
+  <section class="scene intro" id="intro" aria-label="Abertura">
+    <div class="kente" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="stage">
+        <div class="bird-wrap">
+          <svg class="bird" viewBox="-14 -8 232 212" role="img" aria-label="Pássaro Sankofa com a cabeça voltada para trás, segurando um ovo no bico">
+            <defs>
+              <pattern id="wax1" width="120" height="80" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="40" height="40" fill="#1b3b9e"/>
+                <circle cx="20" cy="20" r="9" fill="#f2c230"/><circle cx="20" cy="20" r="3.5" fill="#1b3b9e"/>
+                <circle cx="6" cy="6" r="2.4" fill="#f2c230"/><circle cx="34" cy="34" r="2.4" fill="#f2c230"/>
+                <rect x="40" y="0" width="40" height="40" fill="#e8841a"/>
+                <path d="M60 5 L75 20 L60 35 L45 20 Z" fill="#5a2208"/><path d="M60 13 L67 20 L60 27 L53 20 Z" fill="#f6c24a"/>
+                <rect x="80" y="0" width="40" height="40" fill="#2a8a45"/>
+                <path d="M88 8 L112 32 M112 8 L88 32" stroke="#f2c230" stroke-width="3.5" stroke-linecap="round"/>
+                <rect x="0" y="40" width="40" height="40" fill="#f2c230"/>
+                <rect x="4" y="40" width="6" height="40" fill="#b8302a"/><rect x="16" y="40" width="6" height="40" fill="#2a8a45"/><rect x="28" y="40" width="6" height="40" fill="#1a1208"/>
+                <rect x="0" y="58" width="40" height="4" fill="#1a1208" opacity=".85"/>
+                <rect x="40" y="40" width="40" height="40" fill="#a3221f"/>
+                <path d="M40 49 H80 M40 57 H80 M40 65 H80 M40 73 H80" stroke="#f2c230" stroke-width="3"/>
+                <rect x="80" y="40" width="40" height="40" fill="#5b2a8a"/>
+                <polyline points="80,56 90,46 100,56 110,46 120,56" fill="none" stroke="#f2c230" stroke-width="3"/>
+                <polyline points="80,70 90,60 100,70 110,60 120,70" fill="none" stroke="#f6e7b0" stroke-width="2.4"/>
+              </pattern>
+              <pattern id="wax2" href="#wax1" patternTransform="translate(-46 -22) rotate(6)"/>
+            </defs>
+            <g stroke="#fff" stroke-width="1.8" stroke-linejoin="round">
+              <!-- cauda -->
+              <path d="M148 132 C172 116 198 114 214 122 C200 138 172 144 148 132 Z" fill="url(#wax2)" transform="rotate(-38 150 132)"/>
+              <path d="M148 132 C172 116 198 114 214 122 C200 138 172 144 148 132 Z" fill="url(#wax1)" transform="rotate(-14 150 132)"/>
+              <path d="M148 132 C172 116 198 114 214 122 C200 138 172 144 148 132 Z" fill="url(#wax2)" transform="rotate(10 150 132)"/>
+              <path d="M148 132 C172 116 198 114 214 122 C200 138 172 144 148 132 Z" fill="url(#wax1)" transform="rotate(34 150 132)"/>
+              <!-- pernas -->
+              <rect x="92" y="158" width="9" height="34" fill="url(#wax2)"/>
+              <rect x="116" y="158" width="9" height="34" fill="url(#wax2)"/>
+              <!-- corpo -->
+              <path d="M40 140 C38 102 88 86 130 100 C162 111 172 138 160 162 L150 176 L136 160 C110 172 70 172 40 140 Z" fill="url(#wax1)"/>
+              <path d="M58 126 C74 116 102 117 122 126 C102 136 78 138 58 126 Z" fill="#0b0c18" stroke-width="1.2"/>
+              <path d="M60 142 C80 133 108 136 128 147 C106 155 82 154 60 142 Z" fill="#0b0c18" stroke-width="1.2"/>
+            </g>
+            <!-- pescoço -->
+            <path d="M150 106 C178 70 152 32 106 38 C80 42 68 54 72 68" fill="none" stroke="#fff" stroke-width="19.6" stroke-linecap="round"/>
+            <path d="M150 106 C178 70 152 32 106 38 C80 42 68 54 72 68" fill="none" stroke="url(#wax1)" stroke-width="16" stroke-linecap="round"/>
+            <g stroke="#fff" stroke-width="1.8" stroke-linejoin="round">
+              <circle cx="72" cy="70" r="11.5" fill="url(#wax2)"/>
+              <path d="M63 79 L47 99 L75 85 Z" fill="url(#wax1)"/>
+              <circle cx="69" cy="66" r="3.4" fill="#0b0c18" stroke-width="1"/>
+              <ellipse cx="46" cy="113" rx="9.5" ry="11.5" fill="url(#wax2)"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="copy">
+          <p class="eyebrow">Rastros que transpassam</p>
+          <h1>Sankofa</h1>
+          <p class="meaning-line">Volte as origens</p>
+          <p class="story">Sankofa é um símbolo Adinkra, do povo Akan, em Gana. O pássaro segue em frente com a cabeça voltada para trás e leva no bico o ovo que guarda o que vale carregar do passado. Digite seu nome e descubra o que ele guarda.</p>
+          <button class="go" type="button" id="botao-entrar">Descobrir meu nome</button>
+        </div>
+      </div>
+    </div>
+    <div class="kente" aria-hidden="true"></div>
+  </section>
+
+  <!-- ===== CENA 2: BUSCA ===== -->
+  <section class="scene busca" id="busca" aria-label="Busca do nome" hidden>
+    <div class="kente" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="topbar">
+        <div class="brand"><svg aria-hidden="true"><use href="#sankofa"/></svg><span>RASTROS QUE TRANSPASSAM</span></div>
+        <button class="back" type="button" id="botao-voltar">Abertura</button>
+      </div>
+
+      <div class="hero">
+        <svg class="watermark" viewBox="0 0 200 200" aria-hidden="true"><use href="#sankofa"/></svg>
+        <h2>Qual é o seu <em>nome</em>?</h2>
+        <form id="form-busca" autocomplete="off">
+          <div class="field">
+            <label for="campo-nome">Seu nome</label>
+            <input type="text" id="campo-nome" name="nome" placeholder="Digite seu primeiro nome" spellcheck="false" autocapitalize="words">
+          </div>
+          <button class="go" type="submit" id="botao-buscar">Buscar origem</button>
+          <div class="hint">Para testar: <span id="lista-exemplos"></span></div>
+        </form>
+      </div>
+
+      <div class="result-area" id="resultado" aria-live="polite"></div>
+      <div class="sample">Nomes, turmas e fotos de exemplo.</div>
+      <div class="spacer"></div>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
